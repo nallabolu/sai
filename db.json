@@ -1,0 +1,18 @@
+{
+    "invoices": [{
+            "id": 1,
+            "name": "Ramesh",
+            "amount": "10000"
+        },
+        {
+            "id": 2,
+            "name": "Suresh",
+            "amount": "5000"
+        },
+        {
+            "id": 3,
+            "name": "Sai",
+            "amount": "7300"
+        }
+    ]
+}

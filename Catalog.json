@@ -1,0 +1,47 @@
+{
+    "Icecream": [{
+            "id": 1,
+            "name": "Vannila",
+            "ratePerUnit": 45.26,
+            "image": "icecream/vm.jpg"
+        },
+        {
+            "id": 2,
+            "name": "ButterScoth",
+            "ratePerUnit": 55.26,
+            "image": "icecream/BS.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Choco",
+            "ratePerUnit": 95.26,
+            "image": "icecream/choco.jpg"
+        }
+    ],
+    "SouthIndian": [{
+            "id": 100,
+            "name": "Idily",
+            "ratePerUnit": 20.50,
+            "image": "icecream/idily.jpg"
+        },
+        {
+            "id": 200,
+            "name": "Dosa",
+            "ratePerUnit": 25.00,
+            "image": "icecream/dosa.jpg"
+        }
+    ],
+    "NorthIndian": [{
+            "id": 10,
+            "name": "Poha",
+            "ratePerUnit": 25.00,
+            "image": "icecream/poha.jpg"
+        },
+        {
+            "id": 20,
+            "name": "Parata",
+            "ratePerUnit": 25.00,
+            "image": "icecream/parata.jpg"
+        }
+    ]
+}
