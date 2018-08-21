@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Resturant } from '../resturant';
+import { CatalogApiService } from '../catalog-api.service';
+import { Catalog } from '../catalog';
 
 @Component({
   selector: 'app-details',
@@ -9,7 +11,8 @@ import { Resturant } from '../resturant';
 export class DetailsComponent implements OnInit {
 
   trendingList: Resturant[];
-  constructor() {
+  icecreamList: Catalog[];
+  constructor(private service: CatalogApiService) {
     const karbakery = { id: 101, name: 'Karachi Bakery', status: 'open', rating: 4.5, image: 'assets/images/kara.png' };
     const Paradisebakery = { id: 102, name: 'Paradise Bakery', status: 'open', rating: 5.0, image: 'assets/images/para.jpg' };
     const shahgousebakery = { id: 103, name: 'Shah Gouse Bakery', status: 'close', rating: 3.5, image: 'assets/images/shah.jpg' };
@@ -21,6 +24,7 @@ export class DetailsComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.service.findAll().subscribe(data => this.icecreamList = data);
   }
 
 }
