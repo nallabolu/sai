@@ -3,19 +3,19 @@
             "id": 1,
             "name": "Vannila",
             "ratePerUnit": 45.26,
-            "image": "icecream/vm.jpg"
+            "image": "assets/images/van.jpg"
         },
         {
             "id": 2,
             "name": "ButterScoth",
             "ratePerUnit": 55.26,
-            "image": "icecream/BS.jpg"
+            "image": "assets/images/BM.jpg"
         },
         {
             "id": 3,
             "name": "Choco",
             "ratePerUnit": 95.26,
-            "image": "icecream/choco.jpg"
+            "image": "assets/images/choco.JPG"
         }
     ],
     "SouthIndian": [{

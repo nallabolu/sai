@@ -17,6 +17,30 @@
   </div>
 </div>
 <br>
+
+<div class="card-deck">
+  <div *ngFor="let eachItem of icecreamList" class="card">
+    <div class='card-image-top'>
+      <img src="{{eachItem.image}}" alt="logo" />
+    </div>
+    <div class='card-body'>
+      <div>
+        <i class="fa fa-id-card"></i> {{eachItem.id}}
+      </div>
+      <div>
+          <i class="fa fa-user"></i> {{eachItem.name}}
+
+      </div>
+      <div>
+          <i class="fa fa-bolt"></i> {{eachItem.ratePerUnit}}
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 {{icecreamList|json}}
 
 

@@ -7,6 +7,7 @@ import { Catalog } from '../catalog';
   selector: 'app-details',
   templateUrl: './details.component.html',
   styleUrls: ['./details.component.css']
+ // providers:[CatalogApiService]
 })
 export class DetailsComponent implements OnInit {
 
