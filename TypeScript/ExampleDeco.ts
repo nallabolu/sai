@@ -18,4 +18,4 @@ class ExampleDeco {
 
 const obj = new ExampleDeco("Sai");
 console.log(obj.toString());
-console.log(obj.age);
+//console.log(obj.age);
