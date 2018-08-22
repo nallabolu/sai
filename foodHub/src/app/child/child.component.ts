@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
+import { CommService } from '../comm.service';
 
 @Component({
   selector: 'app-child',
