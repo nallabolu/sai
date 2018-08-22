@@ -1,0 +1,18 @@
+<div class='card'>
+  <div class="card-header bg-light">
+         <label for="inputsm" class="card-title">
+        <b>Item to Add</b>
+      </label>
+      <input type="inputsm" class="form-control input-sm" type="text" [(ngModel)]='item'><br>
+        <button class="btn btn-danger btn-sm" (click)='submit(item)'>Add</button>
+  </div>
+  <div class="card-body">
+  <h1>My Cart</h1>
+  <ol>
+    <li *ngFor="let eachItem of ItemList">
+      {{eachItem}}
+    </li>
+  </ol>
+</div>
+
+</div>
