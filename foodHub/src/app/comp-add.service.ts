@@ -1,6 +1,6 @@
 import { Injectable, ViewContainerRef } from '@angular/core';
-import { ComponentFactoryResolver } from '@angular/core/src/render3';
-import { Component } from '@angular/compiler/src/core';
+import { ComponentFactoryResolver } from '@angular/core';
+
 
 @Injectable({
   providedIn: 'root'

@@ -22,7 +22,7 @@ export class ParentComponent implements OnInit, AfterContentInit {
 
   ngOnInit() {
     this.service.change('Send Items Urgent by Delivery Boy !!');
-    // this.service.currentMessage.subscribe(fromSib => this.resp);
+     this.service.currentMessage.subscribe(fromSib => this.resp);
   }
   onChange(val) {
     this.response = val;
