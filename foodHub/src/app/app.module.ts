@@ -17,6 +17,9 @@ import { SiblingComponent } from './sibling/sibling.component';
 import { HighlightDirective } from './highlight.directive';
 import { ShipDetailsComponent } from './ship-details/ship-details.component';
 import { OrderHistoryComponent } from './order-history/order-history.component';
+import { FilterPipe } from './filter.pipe';
+import { LoginComponent } from './login/login.component';
+import { ResturantComponent } from './resturant/resturant.component';
 
 
 
@@ -35,7 +38,10 @@ import { OrderHistoryComponent } from './order-history/order-history.component';
     SiblingComponent,
     HighlightDirective,
     ShipDetailsComponent,
-    OrderHistoryComponent
+    OrderHistoryComponent,
+    FilterPipe,
+    LoginComponent,
+    ResturantComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +49,7 @@ import { OrderHistoryComponent } from './order-history/order-history.component';
   ],
   providers: [HttpClient],
   entryComponents: [ShipDetailsComponent],
-  bootstrap: [ParentComponent, AppComponent]
+  bootstrap: [AppComponent, LoginComponent]
 
   // bootstrap: [AppComponent]
 })

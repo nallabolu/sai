@@ -1,75 +1,114 @@
 {
-    "Icecream": [{
-            "id": 1,
-            "name": "Vannila",
-            "ratePerUnit": 45.26,
-            "image": "assets/images/van.jpg"
-        },
-        {
-            "id": 2,
-            "name": "ButterScoth",
-            "ratePerUnit": 55.26,
-            "image": "assets/images/BM.jpg"
-        },
-        {
-            "id": 3,
-            "name": "Choco",
-            "ratePerUnit": 95.26,
-            "image": "assets/images/choco.JPG"
-        }
-    ],
-    "SouthIndian": [{
-            "id": 100,
-            "name": "Idily",
-            "ratePerUnit": 20.50,
-            "image": "icecream/idily.jpg"
-        },
-        {
-            "id": 200,
-            "name": "Dosa",
-            "ratePerUnit": 25.00,
-            "image": "icecream/dosa.jpg"
-        }
-    ],
-    "NorthIndian": [{
-            "id": 10,
-            "name": "Poha",
-            "ratePerUnit": 25.00,
-            "image": "icecream/poha.jpg"
-        },
-        {
-            "id": 20,
-            "name": "Parata",
-            "ratePerUnit": 25.00,
-            "image": "icecream/parata.jpg"
-        }
-    ],
-    "order": [{
-        "id": 500,
-        "mobileNumber": 9404040,
-        "firstname": "Ramesh",
-        "address": "Chennai",
-        "meals": ["pasta", "burger", "coke"],
-        "amount": 450.00,
-        "delivered": true
-    }],
-    "myorders": [{
-            "id": 600,
-            "date": "2018-08-20",
-            "value": 450.00,
-            "type": "breakfast"
-        },
-        {
-            "id": 601,
-            "date": "2018-08-22",
-            "value": 1450.00,
-            "type": "lunch"
-        },
-        {
-            "id": 602,
-            "date": "2018-08-22",
-            "value": 450.00,
-            "type": "breakfast"
-        }
-    ]
+  "Icecream": [
+    {
+      "id": 1,
+      "name": "Vannila",
+      "ratePerUnit": 45.26,
+      "image": "assets/images/van.jpg"
+    },
+    {
+      "id": 2,
+      "name": "ButterScoth",
+      "ratePerUnit": 55.26,
+      "image": "assets/images/BM.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Choco",
+      "ratePerUnit": 95.26,
+      "image": "assets/images/choco.JPG"
+    }
+  ],
+  "SouthIndian": [
+    {
+      "id": 100,
+      "name": "Idily",
+      "ratePerUnit": 20.5,
+      "image": "icecream/idily.jpg"
+    },
+    {
+      "id": 200,
+      "name": "Dosa",
+      "ratePerUnit": 25,
+      "image": "icecream/dosa.jpg"
+    }
+  ],
+  "NorthIndian": [
+    {
+      "id": 10,
+      "name": "Poha",
+      "ratePerUnit": 25,
+      "image": "icecream/poha.jpg"
+    },
+    {
+      "id": 20,
+      "name": "Parata",
+      "ratePerUnit": 25,
+      "image": "icecream/parata.jpg"
+    }
+  ],
+  "restaurant": [
+    {
+      "id": 400,
+      "name": "Karachi Bakery",
+      "description": "Traditional Restaraunt",
+      "cuisine": "Multi Cuisine",
+      "photo": "assets/images/karchi.jpg",
+      "priceLevel": "budget",
+      "owner_email": "abc@gmail.com"
+    },
+    {
+      "id": "401",
+      "name": "Pradise Hotsl",
+      "description": "Gud111",
+      "cuisine": "SS",
+      "photo": "../img/pic.jpg",
+      "priceLevel": "low",
+      "owner_email": "sai@gmail.com"
+    },
+    {
+      "id": "402",
+      "name": "Sai Kalyan Reddy",
+      "description": "11111",
+      "cuisine": "qq",
+      "photo": "qqqqq",
+      "priceLevel": "qqqqqqqqqqqq",
+      "owner_email": "qqq1111"
+    }
+  ],
+  "order": [
+    {
+      "id": 500,
+      "mobileNumber": 9404040,
+      "firstname": "Ramesh",
+      "address": "Chennai",
+      "meals": [
+        "pasta",
+        "burger",
+        "coke"
+      ],
+      "amount": 450,
+      "delivered": true
+    }
+  ],
+  "myorders": [
+    {
+      "id": 600,
+      "date": "2018-08-20",
+      "value": 450,
+      "type": "breakfast"
+    },
+    {
+      "id": 601,
+      "date": "2018-08-22",
+      "value": 1450,
+      "type": "lunch"
+    },
+    {
+      "id": 602,
+      "date": "2018-08-22",
+      "value": 450,
+      "type": "breakfast"
+    }
+  ]
 }

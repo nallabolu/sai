@@ -1,0 +1,65 @@
+<form [formGroup]='restForm' class='form-group col-md-6' (ngSubmit)='submit()'>
+  <div>
+    <label for="hid">Hotel ID</label>
+    <input type="" id="hid" class="form-control" formControlName="id">
+  </div>
+  <div>
+    <label for="hname">Hotel Name</label>
+    <input type="" id="hname" class="form-control" formControlName="name">
+  </div>
+  <div>
+    <label for="Dname">Hotel Description</label>
+    <input type="" id="Dname" class="form-control" formControlName="description">
+  </div>
+  <div>
+    <label for="">Cusuine</label>
+    <input type="" class="form-control" formControlName="cuisine">
+  </div>
+  <div>
+    <label for="">Photo</label>
+    <input type="" class="form-control" formControlName="photo">
+  </div>
+  <div>
+    <label for="">Price Level</label>
+    <input type="" class="form-control" formControlName="priceLevel">
+  </div>
+  <div>
+    <label for="">Email</label>
+    <input type="" class="form-control" formControlName="owner_email">
+  </div>
+  <br>
+  <input type="submit" class="btn btn-primary" value="Add">&nbsp;
+  <input type="button" class="btn btn-primary" (click)='Update()' value="Update">
+
+</form>
+<br>
+<div>
+  <table class="table table-bordered">
+    <tr>
+      <th>id</th>
+      <th>name</th>
+      <th>description</th>
+      <th>cuisine</th>
+      <th>photo</th>
+      <th>priceLevel</th>
+      <th>owner_email</th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr *ngFor='let eachitem of resturant'>
+      <td>{{eachitem.id}}</td>
+      <td>{{eachitem.name}}</td>
+      <td>{{eachitem.description}}</td>
+      <td>{{eachitem.cuisine}}</td>
+      <td>{{eachitem.photo}}</td>
+      <td>{{eachitem.priceLevel}}</td>
+      <td>{{eachitem.owner_email}}</td>
+      <td>
+        <button class='fa fa-edit' (click)='edit(eachitem)'></button>
+      </td>
+      <td>
+        <button class='fa fa-close' (click)='Remove(eachitem)'></button>
+      </td>
+    </tr>
+  </table>
+</div>

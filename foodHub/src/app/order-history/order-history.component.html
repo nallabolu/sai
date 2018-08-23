@@ -1,18 +1,28 @@
 <br>
-<table class="table table-bordered ">
-<tr>
-  <th>Order No</th>
-  <th>Order Date</th>
-  <th>Order Value</th>
-  <th>Order Type</th>
-</tr>
-<tr *ngFor='let eachOrder of orderHistory'>
-  <td>{{eachOrder.id}}</td>
-  <td>{{eachOrder.date}}</td>
-  <td>{{eachOrder.value |  currency:'INR':symbol }}</td>
-  <td>{{eachOrder.type | uppercase}}</td>
+<div class="card">
+  <div class="card-body">
+    <table class="table table-bordered ">
+      <tr>
+        <th colspan="4">
+           
+          <input type='text' class="form-control" [(ngModel)]="srchCondition">
+         
+        </th>
+      </tr>
+      <tr>
+        <th>Order No</th>
+        <th>Order Date</th>
+        <th>Order Value</th>
+        <th>Order Type</th>
+      </tr>
+      <tr *ngFor="let eachOrder of orderHistory | filter:'type':srchCondition">
+        <td>{{eachOrder.id}}</td>
+        <td>{{eachOrder.date| date:'fullDate'}}</td>
+        <td>{{eachOrder.value | currency:'INR' }}</td>
+        <td>{{eachOrder.type | uppercase}}</td>
 
-</tr>
+      </tr>
 
-</table>
-
+    </table>
+  </div>
+</div>

@@ -9,6 +9,7 @@ import { CatalogApiService } from '../catalog-api.service';
 })
 export class OrderHistoryComponent implements OnInit {
 
+  srchCondition = '';
   orderHistory: OrderHistory[];
   constructor(private service: CatalogApiService) { }
 
