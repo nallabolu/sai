@@ -16,6 +16,7 @@ import { SalesmenComponent } from './salesmen/salesmen.component';
 import { SiblingComponent } from './sibling/sibling.component';
 import { HighlightDirective } from './highlight.directive';
 import { ShipDetailsComponent } from './ship-details/ship-details.component';
+import { OrderHistoryComponent } from './order-history/order-history.component';
 
 
 
@@ -33,7 +34,8 @@ import { ShipDetailsComponent } from './ship-details/ship-details.component';
     SalesmenComponent,
     SiblingComponent,
     HighlightDirective,
-    ShipDetailsComponent
+    ShipDetailsComponent,
+    OrderHistoryComponent
   ],
   imports: [
     BrowserModule,
