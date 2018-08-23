@@ -5,14 +5,42 @@
   </div>
 
   <div class='container '>
+
+
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="[ '/login']">Login</a>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="[ '/Resturant']">Resturant</a>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="[ '/OrderHistory']">OrderHistory</a>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="[ '/register']">Register</a>
+
+        </li>
+
+      </ul>
+    </nav>
     <br>
+    <router-outlet></router-outlet>
+    <br>
+    <!--br>
       <app-resturant></app-resturant>
     <br>
     <app-parent></app-parent>
     <br>
     <app-details></app-details>
-    <br>
-   
+    <br-->
+
   </div>
 
   <!--div class='footer '>
@@ -20,5 +48,3 @@
   </div-->
 
 </div>
-
-<router-outlet></router-outlet>

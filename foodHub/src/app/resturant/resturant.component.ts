@@ -11,6 +11,7 @@ import { ResturantInfo } from '../resturant-info';
 export class ResturantComponent implements OnInit {
 
   restForm: FormGroup;
+  pos: number;
   constructor(private builder: FormBuilder, private service: CatalogApiService) { }
   resturant: ResturantInfo[];
   frmContent = {
@@ -26,6 +27,10 @@ export class ResturantComponent implements OnInit {
 
   ngOnInit() {
     this.restForm = this.builder.group(this.frmContent);
+    this.getAllRest();
+  }
+
+  private getAllRest() {
     this.service.findRestOrder().subscribe(resp => this.resturant = resp);
   }
 
@@ -36,13 +41,15 @@ export class ResturantComponent implements OnInit {
   }
 
   edit(val) {
+    this.pos = this.resturant.indexOf(val);
     this.restForm.setValue(val);
   }
   Update() {
     console.log(this.restForm.value);
     this.service.UpdateRestOrder(this.restForm.value).subscribe(resp => {
-      const pos = this.resturant.indexOf(resp);
-      this.resturant.splice(pos, 0, resp); console.log(resp);
+      //  const pos = this.resturant.indexOf(resp);
+      //   this.resturant.splice(pos, 0, resp); console.log(resp);
+      this.resturant[this.pos] = resp;
     },
       err => console.log(err));
   }
@@ -51,6 +58,8 @@ export class ResturantComponent implements OnInit {
       subscribe(resp => {
         const pos = this.resturant.indexOf(item);
         this.resturant.splice(pos, 1);
-      });
+        // this.getAllRest();
+      }
+      );
   }
 }
