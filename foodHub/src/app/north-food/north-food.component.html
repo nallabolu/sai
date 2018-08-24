@@ -1,3 +1,11 @@
-<p>
-  north-food works!
-</p>
+<br><br>
+<table class="table table-bordered">
+    <tr *ngFor='let eachitem of northMenu'>
+      <td>{{eachitem.type}}</td>
+      <td>
+        <a [routerLink]="['/showItem',eachitem.code]">{{eachitem.type}}</a> </td>
+  
+    </tr>
+  
+  </table>
+  

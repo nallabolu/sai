@@ -24,6 +24,8 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { FoodComponent } from './food/food.component';
 import { SouthFoodComponent } from './south-food/south-food.component';
 import { NorthFoodComponent } from './north-food/north-food.component';
+import { ShowMenuComponent } from './show-menu/show-menu.component';
+import { LogoutComponent } from './logout/logout.component';
 
 
 
@@ -48,7 +50,9 @@ import { NorthFoodComponent } from './north-food/north-food.component';
     ResturantComponent,
     FoodComponent,
     SouthFoodComponent,
-    NorthFoodComponent
+    NorthFoodComponent,
+    ShowMenuComponent,
+    LogoutComponent
   ],
   imports: [
     BrowserModule,

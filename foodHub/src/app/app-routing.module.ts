@@ -9,6 +9,7 @@ import { UniversalGuardGuard } from './universal-guard.guard';
 import { FoodComponent } from './food/food.component';
 import { NorthFoodComponent } from './north-food/north-food.component';
 import { SouthFoodComponent } from './south-food/south-food.component';
+import { ShowMenuComponent } from './show-menu/show-menu.component';
 
 const routes: Routes =
   [{ path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -17,7 +18,8 @@ const routes: Routes =
   {
     path: 'food', component: FoodComponent, children: [
       { path: 'north', component: NorthFoodComponent },
-      { path: 'south', component: SouthFoodComponent }]
+      { path: 'south', component: SouthFoodComponent },
+      { path: 'showItem/:code', component: ShowMenuComponent }]
   },
   { path: 'Resturant', component: ResturantComponent },
   { path: 'Details', component: OrderComponent },

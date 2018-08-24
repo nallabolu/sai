@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SouthFoodComponent implements OnInit {
 
-  southMenu = [{ 'code': 101, 'type': 'BreakFast' },
+  southMenu = [{ 'code': 101, 'type': 'South - BreakFast' },
   { 'code': 102, 'type': 'Lunch' },
   { 'code': 103, 'type': 'Dinner' },
   { 'code': 104, 'type': 'Mid-Night' },
