@@ -1,8 +1,9 @@
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
-  
+
   <ul class="navbar-nav">
     <li class="nav-item" *ngFor='let eachlink of links'>
-      <a class="nav-link" href='#' >{{eachlink}}</a>
+      <a [routerLink]="[eachlink.link]" class="nav-link">{{eachlink.text}}</a>
     </li>
   </ul>
 </nav>
+

@@ -1,4 +1,5 @@
-<form [formGroup]='restForm' class='form-group col-md-6' (ngSubmit)='submit()'>
+<div class="container">
+<form  [formGroup]='restForm' class='form-group' (ngSubmit)='submit()'>
   <div>
     <label for="hid">Hotel ID</label>
     <input type="" id="hid" class="form-control" formControlName="id">
@@ -12,26 +13,26 @@
     <input type="" id="Dname" class="form-control" formControlName="description">
   </div>
   <div>
-    <label for="">Cusuine</label>
-    <input type="" class="form-control" formControlName="cuisine">
+    <label for="cus">Cusuine</label>
+    <input type=""  id="cus" class="form-control" formControlName="cuisine">
   </div>
   <div>
-    <label for="">Photo</label>
-    <input type="" class="form-control" formControlName="photo">
+    <label for="phot">Photo</label>
+    <input type="" id="phot"  class="form-control" formControlName="photo">
   </div>
   <div>
-    <label for="">Price Level</label>
-    <input type="" class="form-control" formControlName="priceLevel">
+    <label for="plevl">Price Level</label>
+    <input type="" id="plevl" class="form-control" formControlName="priceLevel">
   </div>
   <div>
-    <label for="">Email</label>
-    <input type="" class="form-control" formControlName="owner_email">
+    <label for="ema">Email</label>
+    <input type="" id="ema"  class="form-control" formControlName="owner_email">
   </div>
   <br>
   <input type="submit" class="btn btn-primary" value="Add">&nbsp;
   <input type="button" class="btn btn-primary" (click)='Update()' value="Update">
 
-</form>
+</form></div>
 <br>
 <div>
   <table class="table table-bordered">

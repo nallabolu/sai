@@ -15,7 +15,7 @@
         <th>Order Value</th>
         <th>Order Type</th>
       </tr>
-      <tr *ngFor="let eachOrder of orderHistory | filter:'type':srchCondition">
+      <tr *ngFor="let eachOrder of orderHistory | filter:'type':srchCondition | paginate:{itemsPerPage:2, currentPage:p}">
         <td>{{eachOrder.id}}</td>
         <td>{{eachOrder.date| date:'fullDate'}}</td>
         <td>{{eachOrder.value | currency:'INR' }}</td>
@@ -24,5 +24,7 @@
       </tr>
 
     </table>
+   
   </div>
 </div>
+<pagination-controls (pageChange)="p=$event"></pagination-controls>

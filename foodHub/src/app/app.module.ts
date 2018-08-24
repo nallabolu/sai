@@ -20,6 +20,10 @@ import { OrderHistoryComponent } from './order-history/order-history.component';
 import { FilterPipe } from './filter.pipe';
 import { LoginComponent } from './login/login.component';
 import { ResturantComponent } from './resturant/resturant.component';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { FoodComponent } from './food/food.component';
+import { SouthFoodComponent } from './south-food/south-food.component';
+import { NorthFoodComponent } from './north-food/north-food.component';
 
 
 
@@ -41,11 +45,14 @@ import { ResturantComponent } from './resturant/resturant.component';
     OrderHistoryComponent,
     FilterPipe,
     LoginComponent,
-    ResturantComponent
+    ResturantComponent,
+    FoodComponent,
+    SouthFoodComponent,
+    NorthFoodComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, HttpClientModule, FormsModule, ReactiveFormsModule
+    AppRoutingModule, HttpClientModule, FormsModule, ReactiveFormsModule, NgxPaginationModule
   ],
   providers: [HttpClient],
   entryComponents: [ShipDetailsComponent],

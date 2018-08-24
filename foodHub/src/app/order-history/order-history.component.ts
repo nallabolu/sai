@@ -11,10 +11,12 @@ export class OrderHistoryComponent implements OnInit {
 
   srchCondition = '';
   orderHistory: OrderHistory[];
+  p = 1;
   constructor(private service: CatalogApiService) { }
 
   ngOnInit() {
     this.service.findOrder().subscribe(resp => this.orderHistory = resp);
   }
+  
 
 }
