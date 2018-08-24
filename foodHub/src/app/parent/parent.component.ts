@@ -3,6 +3,7 @@ import { SalesmenComponent } from '../salesmen/salesmen.component';
 import { DistributorsComponent } from '../distributors/distributors.component';
 import { CommService } from '../comm.service';
 
+
 @Component({
   selector: 'app-parent',
   templateUrl: './parent.component.html',
@@ -14,6 +15,7 @@ export class ParentComponent implements OnInit, AfterContentInit {
   response: string;
   @ViewChild(SalesmenComponent) salesmen: SalesmenComponent;
   @ViewChild(DistributorsComponent) distributors: DistributorsComponent;
+
 
   distList: string[];
   salesmenList: string[];

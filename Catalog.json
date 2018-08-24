@@ -72,7 +72,7 @@
       "description": "11111",
       "cuisine": "qq",
       "photo": "sa",
-      "priceLevel": "qqqq12999",
+      "priceLevel": "qqqq",
       "owner_email": "qqq33111"
     }
   ],
@@ -115,7 +115,8 @@
       "date": "2018-08-31",
       "value": 150,
       "type": "lunch"
-    },{
+    },
+    {
       "id": 604,
       "date": "2018-08-12",
       "value": 350,

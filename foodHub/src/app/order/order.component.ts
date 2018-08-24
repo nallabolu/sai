@@ -14,8 +14,8 @@ export class OrderComponent implements OnInit {
   ngOnInit() {
   }
 
-  submit() {
-   
+  submit(value) {
+
     if (this.item == null || this.item === '') {
       alert('Please enter proper value');
     } else {
